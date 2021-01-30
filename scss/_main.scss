@@ -1,31 +1,14 @@
 
 .dropwown-text {font-size: 1.4em;
 }
-
-.containerMov { 
-	width: 100%;
-	height: 400px;
-	background-image: url(../img/fondo1.jpg);
-	background-size: 150%;
-	animation:movimiento 10s infinite linear alternate;
-	position: relative;
-}
-.containerMov__text-parrafo { font-weight: 100;
-	font-size: 2em;
-	color: white;
+.containerMov__text-parrafo { font-size: 2.2em;
+	color:black;
+	text-shadow: 1px 1px rgb(231, 226, 226);
 	padding: 20px;
 	position: relative;
-	text-shadow: 2px 2px #9b9898;
+	padding: 40px;
 	font-family:'Caveat', cursive;
 }
-
-
-@keyframes movimiento { 
-	from { background-position: bottom left;}
-
-	to {background-position:  top right ;}
-}
-
 .main { margin-top: 100px;
 	display: flex;
 	flex-wrap: wrap;
@@ -77,6 +60,9 @@
 	100%{
 		transform: translate3d(calc(-100% * 3), 0, 0);
 	}
+}
+.slidebox { display: flex;
+	justify-content: center;
 }
 .container-all {
 	margin-top: 50px;
@@ -227,8 +213,10 @@ box-shadow: 4px 4px 10px $rosita
 /********* formulario de contacto ***************/
 
 .mainContact { 
+	margin-top: 100px;
 	margin-right: 60px;
 	margin-left: 60px; 
+	margin-bottom: 100px;
 }
 .field_contacto {border:none;
 	text-align: center;
