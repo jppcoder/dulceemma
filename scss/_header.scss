@@ -1,0 +1,56 @@
+header { 
+	width: 100%; 
+	background-color: #e06377;
+	display:flex;
+	z-index: 500;
+}
+#btn-menu {
+	display: none;
+}
+header label {
+	display: none;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	border-right: 1px solid #fff;
+}	
+header label:hover {
+	cursor: pointer;
+	background-color: rgb(224,99,119);
+}
+.emma { color: #fff; 
+	font-size: 2em;
+}
+
+header label img {
+	height: 30px;
+	width: 25px;
+	padding-left: 2px;
+}
+.menu ul {
+	margin:0;
+	list-style: none;
+	padding: 0px;
+	display: flex;
+}
+.menu li { 
+	border-right: 1px solid #fff;
+}
+header div  { font-family: 'Caveat', cursive;
+	align-self: center;
+	font-size: 30px;
+	padding-left: 25%;
+}
+.menu li:hover {
+	background-color: rgba(0,0,0,0.3);
+}
+.aside p {font-weight:10px;
+	font-size:15px;
+}
+.menu li a { 
+	display: block;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;	
+}

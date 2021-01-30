@@ -1,0 +1,117 @@
+@media (max-width: 768px) {
+	
+	.containerMov { max-height: 350px;}
+
+	.containerMov__text-parrafo { 
+		font-size: 1.2em;
+	}
+	#dulce {
+		display: flex;
+		max-width: 300px;
+		font-size: 70px;
+		margin-top: 150px;
+		text-align: center;
+		padding-right: 10px;
+	}
+	#tejido {font-size: 45px;
+	}
+	#espera {font-size: 30px;
+		text-align: center;
+	}
+	.emma { font-family: 'Caveat', cursive;
+		font-size: 2em;
+		color: #fff;
+		padding-left: 25%;
+		padding-top: 5px;
+	}
+	header { 
+		display:flex;
+		background-color: #e06377;
+	}
+	header label {
+		display: inline-flex;
+	}
+	.menu { 
+		position: absolute;
+		background: rgb(224,99,119);
+		width: 70%;
+		margin-left: -70%;
+		margin-top: 50px;
+		transition-duration: 0.5s;
+		z-index: 100
+	}
+	.menu ul { 
+		flex-direction: column;
+	}
+	.menu li a { text-align: left;
+		border-bottom: 1px solid #fff;
+	}
+	.menu li { background-color: none;
+	}
+	#btn-menu:checked ~ .menu { 
+		margin: 0px;
+		margin-top: 50px;
+	} 
+	.main { margin-top: 100px;
+		display: flex;
+		justify-content: center;
+	}
+	.img1 img, .img2 img, .img3 img, .img4 img {height: 300px;
+		width: 300px;
+		border-radius: 150px;
+		margin: 30px;
+		box-sizing: border-box;
+		box-shadow: 4px 4px 10px rgba(224,99,119,0.5);
+	}
+	.img1 img:hover, .img2 img:hover, .img3 img:hover, .img4 img:hover {
+		width: 320px;
+		height: 320px;
+		transition-duration: 1s;
+		border-radius: 160px;
+	}
+	.main div div { margin-top: -30px;
+		font-size: 2em;
+		font-family: 'Caveat', cursive;
+	}
+	.aside { 
+		padding: 20px;		  			
+	}
+	.aside p {font-size: 1em;
+		padding-top:50px;
+	}
+	#formContact { display: grid;
+		grid-template-areas: "nombre nombre"
+		"apellido apellido" 
+		"email email" 
+		"telefono telefono"  
+		"localidad localidad"  
+		"btn-submit clean";
+		grid-template-rows: auto;
+		grid-template-columns: auto;
+		justify-items:stretch;
+		grid-column-gap: 20px;
+		grid-row-gap: 30px;
+		padding: 30px;
+		border:none;
+		align-items: center;
+		background-color: #e06377;
+		border-radius: 10px;
+		box-shadow: 0px 9px 21px 6px rgba(0,0,0,0.5);
+		font-size: 0.8em;
+	}
+	.mainContact { 
+		margin-right: 5px;
+		margin-left: 5px; 
+	}
+	.footer p { color: black;
+		padding-right: 5px;
+		padding-left: 5px; 
+	}
+	@keyframes redes { 
+		from { transform: scale(1);}
+			
+		50% { transform: scale(1.2);}
+	
+		to {transform: scale(1);}
+	}       
+}

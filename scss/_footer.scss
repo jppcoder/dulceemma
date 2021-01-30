@@ -1,0 +1,73 @@
+.footer {
+	display: flex;
+	margin-top: 40px;
+	padding: 30px;
+	background: linear-gradient(to bottom, #ffffff 18%, #e06377 100%);
+	flex-wrap:wrap;
+	justify-content: space-around;
+}
+.footer p { color: black;
+		padding-right: 40px;
+		padding-left: 40px; 
+}       
+.footer img { 
+	margin-top: 20px;
+	height: 40px;
+	width: 40px;
+}
+.footer h4 {
+	width: 100%;
+	margin-top:30px;
+	font-size: 0.8em;
+	text-align: center;
+	color: #fff;
+}
+
+.footer img {
+	animation-name: redes;
+	transition: all 600ms;
+	animation-duration: 6.5s;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+@keyframes redes { 
+	from { transform: scale(1);}
+		
+	50% { transform: scale(1.4);}
+
+	to {transform: scale(1);}
+}
+
+#jpp0 {animation-name: jpp;
+	transition: all 600ms;
+	animation-duration: 6.5s;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+
+#jpp1 {animation-name: jpp;
+	transition: all 600ms;
+	animation-duration: 6.5s;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+}
+#jpp2 {animation-name: jpp;
+	transition: all 600ms;
+	animation-duration: 6.5s;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-delay: 3s;
+}
+@keyframes jpp {
+	from { color:rgb(73, 70, 78);}
+	
+	50% {color: #fff;}
+	
+	to {color: #2e292a;}
+}
+

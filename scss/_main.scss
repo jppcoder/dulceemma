@@ -1,0 +1,358 @@
+
+.dropwown-text {font-size: 1.4em;
+}
+
+.containerMov { 
+	width: 100%;
+	height: 400px;
+	background-image: url(../img/fondo1.jpg);
+	background-size: 150%;
+	animation:movimiento 10s infinite linear alternate;
+	position: relative;
+}
+.containerMov__text-parrafo { font-weight: 100;
+	font-size: 2em;
+	color: white;
+	padding: 20px;
+	position: relative;
+	text-shadow: 2px 2px #9b9898;
+	font-family:'Caveat', cursive;
+}
+
+
+@keyframes movimiento { 
+	from { background-position: bottom left;}
+
+	to {background-position:  top right ;}
+}
+
+.main { margin-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+.img1 img, .img2 img, .img3 img, .img4 img {
+	/* height: 300px;
+	width: 300px; */
+	@include tamaño (300px, 300px);
+	border-radius: 150px;
+	margin: 30px;
+	box-sizing: border-box;
+	box-shadow: 4px 4px 10px $rosita;
+	
+}
+.img1 img:hover, .img2 img:hover, .img3 img:hover, .img4 img:hover {
+	/* width: 320px;
+	height: 320px; */
+	@include tamaño (320px, 320px);
+	transition-duration: 1s;
+	border-radius: 160px;
+}
+.main div {padding: 0px;
+	text-align: center;	
+}
+.main div div { margin-top: -30px;
+	font-size: 3em;
+	font-family: 'Caveat', cursive;
+}
+.body {display: flex;
+	justify-content: center;
+	flex-flow: column;
+}
+
+/********* menu slider ***************/
+@keyframes autoplay{
+	25%{
+		transform: translate3d(calc(-100% * 0), 0, 0);
+	}
+	
+	50%{
+		transform: translate3d(calc(-100% * 1), 0, 0);
+	}
+	
+	75%{
+		transform: translate3d(calc(-100% * 2), 0, 0);
+	}
+	100%{
+		transform: translate3d(calc(-100% * 3), 0, 0);
+	}
+}
+.container-all {
+	margin-top: 50px;
+	display: flex;
+	max-width: 1000px;
+	width: 100%;
+	border-radius: 6px;
+	overflow: hidden;
+	justify-content: center;
+	align-content: center;
+}
+.item-slide img {max-width: 100%}
+.slide{
+	display: flex;
+	transform: translate3d(0, 0, 0, 0);
+	transition: all 600ms;
+	animation-name: autoplay;
+	animation-duration: 6.5s;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+.item-slide{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	flex-grow: 0;
+	max-width: 100%;
+}
+.pagination{
+	bottom: 20px;
+	left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.pagination-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid white;
+	@include tamaño (16px, 16px);
+	border-radius: 4px;
+	overflow: hidden;
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.5);
+	margin: 0 10px;
+	text-align: center;
+	transition: all 300ms;
+}
+.pagination-item:hover{
+	transform: scale(2);
+}
+.pagination-item img{
+	display: inline-block;
+	max-width: none;
+	height: 100%;
+	transform: scale(1);
+	opacity: 0;
+	transition: all 300ms;
+}
+.pagination-item:hover img{
+	opacity: 1;
+	transform: scale(1);
+}
+input[id="1"]:checked ~ .slide{
+	animation: none;
+	transform: translate3d(0, 0, 0);
+}
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+	background: #fff;
+}
+input[id="2"]:checked ~ .slide{
+	animation: none;
+	transform: translate3d(calc(-100% * 1), 0, 0);
+}
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+	background: #fff;
+}
+input[id="3"]:checked ~ .slide{
+	animation: none;
+	transform: translate3d(calc(-100% * 2), 0, 0);
+}
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+	background: #fff;
+}
+input[id="4"]:checked ~ .slide{
+	animation: none;
+	transform: translate3d(calc(-100% * 3), 0, 0);
+}
+input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
+	background: #fff;
+}
+/********* tarjetas de valoracion ***************/
+
+.valoracion { display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 50px;
+}
+.valoracion__tarjeta { 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: transparent ;
+	text-align: center;
+	width: 200px;
+	height: 250px;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 4px 4px 10px $rosita;
+	padding: 20px;
+	margin:20px;
+}
+.valoracion__tarjeta-img img {max-width: 100px;
+max-height: 100px;
+margin: 10px;
+box-sizing: border-box;
+border-radius: 50px;
+box-shadow: 4px 4px 10px $rosita
+}
+.valoracion__tarjeta-texto { margin-top: 10px;
+}
+/********* seccion compra ***************/
+
+.shop1 {background-color:#ffe6e6;
+	@extend %shop;
+}
+.shop2 {background-color: #ffcccc;
+	@extend %shop;
+}
+.shop3 {background-color: #ffb3b3;
+	@extend %shop;
+}
+.shop4 {background-color: #ff9999;
+	@extend %shop;
+}
+.shop5 {background-color: #ff8080;
+	@extend %shop;
+}
+.shop6 {background-color: #ff6666;
+	height:300px;
+}
+/********* formulario de contacto ***************/
+
+.mainContact { 
+	margin-right: 60px;
+	margin-left: 60px; 
+}
+.field_contacto {border:none;
+	text-align: center;
+}
+.aside { background-color:none;
+	padding:30px;
+	margin: 20px;
+	p { color: black;
+		font-size:1.2em;
+	}						 
+}
+#formContact { display: grid;
+	grid-template-areas: "nombre nombre apellido apellido"
+	"email email telefono telefono"
+	"localidad localidad btn-submit clean";
+	grid-template-rows: 50px 40px 40px;
+	grid-template-columns: auto;
+	justify-items:stretch;
+	grid-column-gap: 20px;
+	grid-row-gap: 40px;
+	padding: 30px;
+	border:none;
+	align-items: center;
+	background-color: #e06377;
+	border-radius: 10px;
+	box-shadow: 0px 9px 21px 6px rgba(0,0,0,0.5);
+}
+#formContact .nombre{ grid-area:nombre ;
+	height: 30px;
+	background-color: transparent ;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	outline: none;
+	transition: 0.4s border;
+	font-size: 1em;
+	color: #fff;
+}	
+#formContact .nombre::placeholder { padding-left: 10px;
+	color: #fff;
+}
+#formContact .apellido{ grid-area:apellido ;
+	height: 30px;
+	background-color: transparent ;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	outline: none;
+	transition: 0.4s border;
+	font-size: 1.1em;
+	color: #fff;
+}
+#formContact .apellido::placeholder { padding-left: 10px;
+	color: #fff;
+}
+#formContact .email{ grid-area:email ;
+	height: 30px;
+	background-color: transparent ;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	outline: none;
+	transition: 0.4s border;
+	font-size: 1.1em;
+	color: #fff;
+}
+#formContact .email::placeholder { padding-left: 10px;
+	color: #fff;
+}
+#formContact .telefono{ grid-area:telefono ;
+	height: 30px;
+	background-color: transparent ;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	outline: none;
+	transition: 0.4s border;
+	font-size: 1.1em;
+	color: #fff;
+}
+#formContact .telefono::placeholder { padding-left: 10px; 
+	color: #fff;
+}
+#formContact .localidad{ grid-area:localidad ;
+	height: 30px;
+	background-color: transparent ;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	outline: none;
+	transition: 0.4s border;
+	font-size: 1.1em;
+	color: #fff;
+}
+#formContact .localidad::placeholder { padding-left: 10px;
+	color: #fff;
+}
+#formContact #btn-sub{ grid-area: btn-submit;
+	height: 30px;
+	border:none;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 1.1em;
+	background-color: #c83349;
+}
+#formContact .btn-clean{ grid-area:clean ; 
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 1.1em;
+	background-color: #c83349;
+}
+#formContact input {background-color: #e06377
+}
+
+.valoracion__tarjeta { transition: width 3s; 
+}
+
+.valoracion__tarjeta:hover { transform: translateY(-20px) ;
+}
+
