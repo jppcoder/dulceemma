@@ -1,0 +1,49 @@
+.mainContent {
+    display: flex;
+    flex-wrap: wrap;
+}
+.main { margin-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 70%;
+}
+
+.main div {padding: 0px;
+	text-align: center;	
+}
+.main div div { margin-top: -30px;
+	font-size: 3em;
+	font-family: 'Caveat', cursive;
+}
+.aside { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding:auto;
+    margin-top: 100px;
+    margin: 30px;
+    h4 { color: black;
+         width: 200px;
+		font-size:1.7em;
+	}						 
+}
+.imgdiv img {
+	@include tamaño (300px, 300px);
+	border-radius: 150px;
+	margin: 30px;
+	box-sizing: border-box;
+	box-shadow: 4px 4px 10px $rosita;
+	
+}
+.imgdiv img:hover  {
+	@include tamaño (320px, 320px);
+	transition-duration: 1s;
+	border-radius: 160px;
+}
+.asideList {
+    font-size: 0.7em;  
+}
+.aside h4 {
+    margin-top: 30px;
+}

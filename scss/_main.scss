@@ -15,7 +15,7 @@
 	justify-content: space-around;
 	
 }
-.img1 img, .img2 img, .img3 img, .img4 img {
+.imgdiv img, .img2 img, .img3 img, .img4 img {
 	/* height: 300px;
 	width: 300px; */
 	@include tamaño (300px, 300px);
@@ -25,7 +25,7 @@
 	box-shadow: 4px 4px 10px $rosita;
 	
 }
-.img1 img:hover, .img2 img:hover, .img3 img:hover, .img4 img:hover {
+.imgdiv img:hover, .img2 img:hover, .img3 img:hover, .img4 img:hover {
 	/* width: 320px;
 	height: 320px; */
 	@include tamaño (320px, 320px);

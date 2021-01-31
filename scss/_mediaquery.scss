@@ -115,3 +115,26 @@
 		to {transform: scale(1);}
 	}       
 }
+
+@media (max-width: 1065px) {
+
+	.main { margin-top: 100px;
+		max-width: 100%;
+	}
+	.aside { 
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		margin-top: 100px;
+		margin: 30px;
+		justify-content: space-between;
+		h4 { color: black;
+			font-size:1.7em;
+			ul { list-style-image: url("img/img1.jpg");
+
+			}
+			
+		}						 
+	}
+}
+
