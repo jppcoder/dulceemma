@@ -912,11 +912,19 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
 }
 
 .asideList {
+  font-family: "Caveat", cursive;
   font-size: 0.7em;
 }
 
 .aside h4 {
+  font-family: "Caveat", cursive;
   margin-top: 30px;
+  font-size: 3em;
+}
+
+.asideList li {
+  font-family: "Caveat", cursive;
+  font-size: 0.8em;
 }
 
 @media (max-width: 768px) {
@@ -1051,9 +1059,11 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
   }
 
   .footer p {
+    display: inline-block;
     color: black;
     padding-right: 5px;
     padding-left: 5px;
+    font-size: 0.9em;
   }
 
   @-webkit-keyframes redes {
@@ -1096,9 +1106,12 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
   }
   .aside h4 {
     color: black;
-    font-size: 1.7em;
+    font-size: 1.9em;
   }
   .aside h4 ul {
-    list-style-image: url("img/img1.jpg");
+    list-style: square;
+  }
+  .aside h4 ul li {
+    font-size: 1.3em;
   }
 }/*# sourceMappingURL=style.css.map */
