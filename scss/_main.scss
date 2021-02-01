@@ -9,36 +9,7 @@
 	padding: 40px;
 	font-family:'Caveat', cursive;
 }
-.main { margin-top: 100px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	
-}
-.imgdiv img, .img2 img, .img3 img, .img4 img {
-	/* height: 300px;
-	width: 300px; */
-	@include tamaño (300px, 300px);
-	border-radius: 150px;
-	margin: 30px;
-	box-sizing: border-box;
-	box-shadow: 4px 4px 10px $rosita;
-	
-}
-.imgdiv img:hover, .img2 img:hover, .img3 img:hover, .img4 img:hover {
-	/* width: 320px;
-	height: 320px; */
-	@include tamaño (320px, 320px);
-	transition-duration: 1s;
-	border-radius: 160px;
-}
-.main div {padding: 0px;
-	text-align: center;	
-}
-.main div div { margin-top: -30px;
-	font-size: 3em;
-	font-family: 'Caveat', cursive;
-}
+
 .body {display: flex;
 	justify-content: center;
 	flex-flow: column;
@@ -221,13 +192,7 @@ box-shadow: 4px 4px 10px $rosita
 .field_contacto {border:none;
 	text-align: center;
 }
-.aside { background-color:none;
-	padding:30px;
-	margin: 20px;
-	p { color: black;
-		font-size:1.2em;
-	}						 
-}
+
 #formContact { display: grid;
 	grid-template-areas: "nombre nombre apellido apellido"
 	"email email telefono telefono"

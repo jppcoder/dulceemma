@@ -167,39 +167,6 @@ header div {
   padding: 40px;
   font-family: 'Caveat', cursive; }
 
-.main {
-  margin-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-
-.imgdiv img, .img2 img, .img3 img, .img4 img {
-  /* height: 300px;
-	width: 300px; */
-  height: 300px;
-  width: 300px;
-  border-radius: 150px;
-  margin: 30px;
-  box-sizing: border-box;
-  box-shadow: 4px 4px 10px rgba(224, 99, 119, 0.5); }
-
-.imgdiv img:hover, .img2 img:hover, .img3 img:hover, .img4 img:hover {
-  /* width: 320px;
-	height: 320px; */
-  height: 320px;
-  width: 320px;
-  transition-duration: 1s;
-  border-radius: 160px; }
-
-.main div {
-  padding: 0px;
-  text-align: center; }
-
-.main div div {
-  margin-top: -30px;
-  font-size: 3em;
-  font-family: 'Caveat', cursive; }
-
 .body {
   display: flex;
   justify-content: center;
@@ -382,14 +349,6 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
   border: none;
   text-align: center; }
 
-.aside {
-  background-color: none;
-  padding: 30px;
-  margin: 20px; }
-  .aside p {
-    color: black;
-    font-size: 1.2em; }
-
 #formContact {
   display: grid;
   grid-template-areas: "nombre nombre apellido apellido" "email email telefono telefono" "localidad localidad btn-submit clean";
@@ -527,8 +486,11 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
 
 .footer p {
   color: black;
+  font-family: 'Caveat', cursive;
   padding-right: 40px;
-  padding-left: 40px; }
+  padding-left: 40px;
+  width: 100%;
+  font-size: 1.3em; }
 
 .footer img {
   margin-top: 20px;
@@ -745,7 +707,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
     color: black;
     padding-right: 5px;
     padding-left: 5px;
-    font-size: 0.9em; }
+    font-size: 1,1em; }
   @keyframes redes {
     from {
       transform: scale(1); }
