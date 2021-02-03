@@ -1,0 +1,54 @@
+/********* tarjetas de valoracion ***************/
+.valoracion { display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 50px;
+}
+.valoracion__tarjeta { 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: transparent ;
+	text-align: center;
+	width: 200px;
+	height: 250px;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 4px 4px 10px $rosita;
+	padding: 20px;
+    margin:20px;
+    transition: width 3s;
+}
+.valoracion__tarjeta-img img {max-width: 100px;
+max-height: 100px;
+margin: 10px;
+box-sizing: border-box;
+border-radius: 50px;
+box-shadow: 4px 4px 10px $rosita
+}
+.valoracion__tarjeta-texto { margin-top: 10px;
+}
+
+.valoracion__tarjeta:hover { transform: translateY(-20px) ;
+}
+/********* seccion compra ***************/
+.shop1 {background-color:rgb(224,99,119);
+	@extend %shop;
+}
+.shop2 {background-color: rgb(224,99,119);
+	@extend %shop;
+}
+.shop3 {background-color: rgb(224,99,119);
+	@extend %shop;
+}
+.shop4 {background-color: rgb(224,99,119);
+	@extend %shop;
+}
+.shop5 {background-color:rgb(224,99,119);
+	@extend %shop;
+}
+.shop6 {background-color: rgb(224,99,119);
+	height:300px;
+}
+span {color: white;}

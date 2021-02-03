@@ -1,9 +1,11 @@
 @media (max-width: 768px) {
+	.logoprincipal {z-index: 1000;}
 	
 	.containerMov { max-height: 350px;}
 
 	.containerMov__text-parrafo { 
-		font-size: 1.2em;
+		font-size: 1.5em;
+		padding: 5px;
 	}
 	#dulce {
 		display: flex;
@@ -27,6 +29,7 @@
 	header { 
 		display:flex;
 		background-color: #e06377;
+		height: 50px;
 	}
 	header label {
 		display: inline-flex;
@@ -42,6 +45,7 @@
 	}
 	.menu ul { 
 		flex-direction: column;
+		padding-left: 0px;
 	}
 	.menu li a { text-align: left;
 		border-bottom: 1px solid #fff;
@@ -74,6 +78,7 @@
 		font-family: 'Caveat', cursive;
 	}
 	.aside { 
+		padding-top: 50px;
 		padding: 20px;		  			
 	}
 	.aside p {font-size: 1em;
@@ -103,7 +108,7 @@
 		margin-right: 5px;
 		margin-left: 5px; 
 	}
-	.footer p { display:inline-block;
+	.footerP p { display:inline-block;
 		color: black;
 		padding-right: 5px;
 		padding-left: 5px; 
@@ -117,9 +122,7 @@
 		to {transform: scale(1);}
 	}       
 }
-
 @media (max-width: 1065px) {
-
 	.main { margin-top: 100px;
 		max-width: 100%;
 	}

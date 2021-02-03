@@ -1,5 +1,4 @@
 * {
-  font-family: sans-serif;
   margin: 0px;
   padding: 0px; }
 
@@ -58,7 +57,7 @@ a {
   color: #fff; }
 
 .boton-start:hover {
-  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  background: #4b0626 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
   color: white; }
 
 .boton-start:active {
@@ -94,11 +93,27 @@ a {
     transform: scale(2);
     margin: 50px; } }
 
+* {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 14px; }
+
 header {
+  position: fixed;
   width: 100%;
-  background-color: #e06377;
   display: flex;
-  z-index: 500; }
+  z-index: 500;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 50px;
+  padding-right: 40px;
+  background-color: #e06377;
+  max-height: 65px; }
+
+.logoprincipal {
+  padding: 10px;
+  width: 110px;
+  height: 110px;
+  justify-content: flex-end; }
 
 #btn-menu {
   display: none; }
@@ -108,15 +123,11 @@ header label {
   width: 40px;
   height: 40px;
   padding: 10px;
-  border-right: 1px solid #fff; }
+  border-right: 1px solid #f09a9a; }
 
 header label:hover {
   cursor: pointer;
   background-color: #e06377; }
-
-.emma {
-  color: #fff;
-  font-size: 2em; }
 
 header label img {
   height: 30px;
@@ -126,17 +137,8 @@ header label img {
 .menu ul {
   margin: 0;
   list-style: none;
-  padding: 0px;
+  padding-left: 40px;
   display: flex; }
-
-.menu li {
-  border-right: 1px solid #fff; }
-
-header div {
-  font-family: 'Caveat', cursive;
-  align-self: center;
-  font-size: 30px;
-  padding-left: 25%; }
 
 .menu li:hover {
   background-color: rgba(0, 0, 0, 0.3); }
@@ -148,24 +150,26 @@ header div {
 .menu li a {
   display: block;
   padding: 10px 20px;
-  color: #fff;
+  color: white;
   text-decoration: none;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 25px; }
+
+.containerMov__text-parrafo {
+  font-size: 1.5em;
+  color: #504e4e;
+  text-shadow: 1px 1px #e7e2e2;
+  padding: 20px;
+  position: relative;
+  padding: 40px;
+  font-family: 'Annie Use Your Telescope', cursive; }
 
 .shop1, .shop2, .shop3, .shop4, .shop5 {
   height: 300px; }
 
 .dropwown-text {
   font-size: 1.4em; }
-
-.containerMov__text-parrafo {
-  font-size: 2.2em;
-  color: black;
-  text-shadow: 1px 1px #e7e2e2;
-  padding: 20px;
-  position: relative;
-  padding: 40px;
-  font-family: 'Caveat', cursive; }
 
 .body {
   display: flex;
@@ -190,7 +194,7 @@ header div {
 .container-all {
   margin-top: 50px;
   display: flex;
-  max-width: 1000px;
+  padding: 40px;
   width: 100%;
   border-radius: 6px;
   overflow: hidden;
@@ -285,64 +289,74 @@ input[id="4"]:checked ~ .slide {
 input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
   background: #fff; }
 
-/********* tarjetas de valoracion ***************/
-.valoracion {
+.mainContent {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.main {
+  margin-top: 80px;
+  display: flex;
   flex-wrap: wrap;
-  padding: 50px; }
+  justify-content: space-around;
+  max-width: 70%; }
 
-.valoracion__tarjeta {
+.main div {
+  padding: 0px;
+  text-align: center; }
+
+.main div div {
+  margin-top: -30px;
+  font-size: 3em;
+  font-family: 'Annie Use Your Telescope', cursive; }
+
+.aside {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  background-color: transparent;
-  text-align: center;
-  width: 200px;
-  height: 250px;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 4px 4px 10px rgba(224, 99, 119, 0.5);
-  padding: 20px;
-  margin: 20px; }
+  padding: auto;
+  padding-top: 100px;
+  margin: 30px; }
+  .aside h4 {
+    color: black;
+    width: 200px;
+    font-size: 1.7em; }
 
-.valoracion__tarjeta-img img {
-  max-width: 100px;
-  max-height: 100px;
-  margin: 10px;
+.imgdiv img {
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+  margin: 30px;
   box-sizing: border-box;
-  border-radius: 50px;
   box-shadow: 4px 4px 10px rgba(224, 99, 119, 0.5); }
 
-.valoracion__tarjeta-texto {
-  margin-top: 10px; }
+.imgdiv img:hover {
+  height: 320px;
+  width: 320px;
+  transition-duration: 1s;
+  border-radius: 160px; }
 
-/********* seccion compra ***************/
-.shop1 {
-  background-color: #ffe6e6; }
+.asideList {
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 0.7em; }
 
-.shop2 {
-  background-color: #ffcccc; }
+.aside h4 {
+  font-family: 'Annie Use Your Telescope', cursive;
+  margin-top: 30px;
+  font-size: 3em; }
 
-.shop3 {
-  background-color: #ffb3b3; }
+.asideList li {
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 0.8em; }
 
-.shop4 {
-  background-color: #ff9999; }
-
-.shop5 {
-  background-color: #ff8080; }
-
-.shop6 {
-  background-color: #ff6666;
-  height: 300px; }
+* {
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 14px; }
 
 /********* formulario de contacto ***************/
 .mainContact {
   margin-top: 100px;
-  margin-right: 60px;
-  margin-left: 60px;
+  margin-right: 40px;
+  margin-left: 40px;
   margin-bottom: 100px; }
 
 .field_contacto {
@@ -374,7 +388,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
   border-right: 1px solid transparent;
   outline: none;
   transition: 0.4s border;
-  font-size: 1em;
+  font-size: 1.8em;
   color: #fff; }
 
 #formContact .nombre::placeholder {
@@ -391,7 +405,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
   border-right: 1px solid transparent;
   outline: none;
   transition: 0.4s border;
-  font-size: 1.1em;
+  font-size: 1.8em;
   color: #fff; }
 
 #formContact .apellido::placeholder {
@@ -408,7 +422,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
   border-right: 1px solid transparent;
   outline: none;
   transition: 0.4s border;
-  font-size: 1.1em;
+  font-size: 1.8em;
   color: #fff; }
 
 #formContact .email::placeholder {
@@ -425,7 +439,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
   border-right: 1px solid transparent;
   outline: none;
   transition: 0.4s border;
-  font-size: 1.1em;
+  font-size: 1.8em;
   color: #fff; }
 
 #formContact .telefono::placeholder {
@@ -442,7 +456,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
   border-right: 1px solid transparent;
   outline: none;
   transition: 0.4s border;
-  font-size: 1.1em;
+  font-size: 1.8em;
   color: #fff; }
 
 #formContact .localidad::placeholder {
@@ -455,7 +469,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
   border: none;
   border-radius: 3px;
   color: #fff;
-  font-size: 1.1em;
+  font-size: 1.6em;
   background-color: #c83349; }
 
 #formContact .btn-clean {
@@ -464,47 +478,100 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
   border: none;
   border-radius: 3px;
   color: #fff;
-  font-size: 1.1em;
+  font-size: 1.6em;
   background-color: #c83349; }
 
 #formContact input {
   background-color: #e06377; }
 
+/********* tarjetas de valoracion ***************/
+.valoracion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px; }
+
 .valoracion__tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  text-align: center;
+  width: 200px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px rgba(224, 99, 119, 0.5);
+  padding: 20px;
+  margin: 20px;
   transition: width 3s; }
+
+.valoracion__tarjeta-img img {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 10px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  box-shadow: 4px 4px 10px rgba(224, 99, 119, 0.5); }
+
+.valoracion__tarjeta-texto {
+  margin-top: 10px; }
 
 .valoracion__tarjeta:hover {
   transform: translateY(-20px); }
 
-.footer {
+/********* seccion compra ***************/
+.shop1 {
+  background-color: #e06377; }
+
+.shop2 {
+  background-color: #e06377; }
+
+.shop3 {
+  background-color: #e06377; }
+
+.shop4 {
+  background-color: #e06377; }
+
+.shop5 {
+  background-color: #e06377; }
+
+.shop6 {
+  background-color: #e06377;
+  height: 300px; }
+
+span {
+  color: white; }
+
+.footerP {
   display: flex;
   margin-top: 40px;
-  padding: 30px;
-  background: linear-gradient(to bottom, #ffffff 18%, #e06377 100%);
   flex-wrap: wrap;
   justify-content: space-around; }
 
-.footer p {
-  color: black;
-  font-family: 'Caveat', cursive;
-  padding-right: 40px;
-  padding-left: 40px;
-  width: 100%;
-  font-size: 1.3em; }
+.footerP P {
+  font-size: 1.5em;
+  padding: 40px;
+  font-family: 'Annie Use Your Telescope', cursive;
+  width: 100%; }
 
-.footer img {
+.footerP img {
   margin-top: 20px;
   height: 40px;
   width: 40px; }
 
-.footer h4 {
+.footerP h4 {
+  background: #e06377;
   width: 100%;
-  margin-top: 30px;
-  font-size: 0.8em;
+  padding-top: 15px;
+  margin-top: 20px;
+  font-size: 1.3em;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  height: 90px; }
 
-.footer img {
+.footerP img {
   animation-name: redes;
   transition: all 600ms;
   animation-duration: 6.5s;
@@ -554,70 +621,14 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
   to {
     color: #2e292a; } }
 
-.mainContent {
-  display: flex;
-  flex-wrap: wrap; }
-
-.main {
-  margin-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 70%; }
-
-.main div {
-  padding: 0px;
-  text-align: center; }
-
-.main div div {
-  margin-top: -30px;
-  font-size: 3em;
-  font-family: 'Caveat', cursive; }
-
-.aside {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: auto;
-  margin-top: 100px;
-  margin: 30px; }
-  .aside h4 {
-    color: black;
-    width: 200px;
-    font-size: 1.7em; }
-
-.imgdiv img {
-  height: 300px;
-  width: 300px;
-  border-radius: 150px;
-  margin: 30px;
-  box-sizing: border-box;
-  box-shadow: 4px 4px 10px rgba(224, 99, 119, 0.5); }
-
-.imgdiv img:hover {
-  height: 320px;
-  width: 320px;
-  transition-duration: 1s;
-  border-radius: 160px; }
-
-.asideList {
-  font-family: 'Caveat', cursive;
-  font-size: 0.7em; }
-
-.aside h4 {
-  font-family: 'Caveat', cursive;
-  margin-top: 30px;
-  font-size: 3em; }
-
-.asideList li {
-  font-family: 'Caveat', cursive;
-  font-size: 0.8em; }
-
 @media (max-width: 768px) {
+  .logoprincipal {
+    z-index: 1000; }
   .containerMov {
     max-height: 350px; }
   .containerMov__text-parrafo {
-    font-size: 1.2em; }
+    font-size: 1.5em;
+    padding: 5px; }
   #dulce {
     display: flex;
     max-width: 300px;
@@ -638,7 +649,8 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
     padding-top: 5px; }
   header {
     display: flex;
-    background-color: #e06377; }
+    background-color: #e06377;
+    height: 50px; }
   header label {
     display: inline-flex; }
   .menu {
@@ -650,7 +662,8 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
     transition-duration: 0.5s;
     z-index: 100; }
   .menu ul {
-    flex-direction: column; }
+    flex-direction: column;
+    padding-left: 0px; }
   .menu li a {
     text-align: left;
     border-bottom: 1px solid #fff; }
@@ -680,6 +693,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
     font-size: 2em;
     font-family: 'Caveat', cursive; }
   .aside {
+    padding-top: 50px;
     padding: 20px; }
   .aside p {
     font-size: 1em;
@@ -702,7 +716,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
   .mainContact {
     margin-right: 5px;
     margin-left: 5px; }
-  .footer p {
+  .footerP p {
     display: inline-block;
     color: black;
     padding-right: 5px;

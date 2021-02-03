@@ -1,33 +1,33 @@
-.footer {
+
+.footerP {
 	display: flex;
 	margin-top: 40px;
-	padding: 30px;
-	background: linear-gradient(to bottom, #ffffff 18%, #e06377 100%);
 	flex-wrap:wrap;
 	justify-content: space-around;
 }
-.footer p { 
-	color: black;
-	font-family: 'Caveat', cursive;
-	padding-right: 40px;
-	padding-left: 40px;
+
+.footerP P {font-size: 1.5em;
+	padding: 40px;
+	font-family: 'Annie Use Your Telescope', cursive;
 	width: 100%;
-	font-size: 1.3em;
 }       
-.footer img { 
+.footerP img { 
 	margin-top: 20px;
 	height: 40px;
 	width: 40px;
 }
-.footer h4 {
+.footerP h4 {
+	background:rgb(224,99,119);
 	width: 100%;
-	margin-top:30px;
-	font-size: 0.8em;
+	padding-top: 15px;
+	margin-top:20px;
+	font-size: 1.3em;
 	text-align: center;
 	color: #fff;
+	height: 90px;
 }
 
-.footer img {
+.footerP img {
 	animation-name: redes;
 	transition: all 600ms;
 	animation-duration: 6.5s;

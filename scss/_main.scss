@@ -1,20 +1,9 @@
-
 .dropwown-text {font-size: 1.4em;
 }
-.containerMov__text-parrafo { font-size: 2.2em;
-	color:black;
-	text-shadow: 1px 1px rgb(231, 226, 226);
-	padding: 20px;
-	position: relative;
-	padding: 40px;
-	font-family:'Caveat', cursive;
-}
-
 .body {display: flex;
 	justify-content: center;
 	flex-flow: column;
 }
-
 /********* menu slider ***************/
 @keyframes autoplay{
 	25%{
@@ -38,12 +27,13 @@
 .container-all {
 	margin-top: 50px;
 	display: flex;
-	max-width: 1000px;
+	padding: 40px;
 	width: 100%;
 	border-radius: 6px;
 	overflow: hidden;
 	justify-content: center;
 	align-content: center;
+	
 }
 .item-slide img {max-width: 100%}
 .slide{
@@ -55,6 +45,7 @@
 	animation-direction: alternate;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
+	
 }
 .item-slide{
 	position: relative;
@@ -72,6 +63,7 @@
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+	
 }
 .pagination-item{
 	display: flex;
@@ -129,183 +121,5 @@ input[id="4"]:checked ~ .slide{
 }
 input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 	background: #fff;
-}
-/********* tarjetas de valoracion ***************/
-
-.valoracion { display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	padding: 50px;
-}
-.valoracion__tarjeta { 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: transparent ;
-	text-align: center;
-	width: 200px;
-	height: 250px;
-	padding: 10px;
-	border-radius: 5px;
-	box-shadow: 4px 4px 10px $rosita;
-	padding: 20px;
-	margin:20px;
-}
-.valoracion__tarjeta-img img {max-width: 100px;
-max-height: 100px;
-margin: 10px;
-box-sizing: border-box;
-border-radius: 50px;
-box-shadow: 4px 4px 10px $rosita
-}
-.valoracion__tarjeta-texto { margin-top: 10px;
-}
-/********* seccion compra ***************/
-
-.shop1 {background-color:#ffe6e6;
-	@extend %shop;
-}
-.shop2 {background-color: #ffcccc;
-	@extend %shop;
-}
-.shop3 {background-color: #ffb3b3;
-	@extend %shop;
-}
-.shop4 {background-color: #ff9999;
-	@extend %shop;
-}
-.shop5 {background-color: #ff8080;
-	@extend %shop;
-}
-.shop6 {background-color: #ff6666;
-	height:300px;
-}
-/********* formulario de contacto ***************/
-
-.mainContact { 
-	margin-top: 100px;
-	margin-right: 60px;
-	margin-left: 60px; 
-	margin-bottom: 100px;
-}
-.field_contacto {border:none;
-	text-align: center;
-}
-
-#formContact { display: grid;
-	grid-template-areas: "nombre nombre apellido apellido"
-	"email email telefono telefono"
-	"localidad localidad btn-submit clean";
-	grid-template-rows: 50px 40px 40px;
-	grid-template-columns: auto;
-	justify-items:stretch;
-	grid-column-gap: 20px;
-	grid-row-gap: 40px;
-	padding: 30px;
-	border:none;
-	align-items: center;
-	background-color: #e06377;
-	border-radius: 10px;
-	box-shadow: 0px 9px 21px 6px rgba(0,0,0,0.5);
-}
-#formContact .nombre{ grid-area:nombre ;
-	height: 30px;
-	background-color: transparent ;
-	border-bottom: 1px solid #fff;
-	border-top: 1px solid transparent;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	outline: none;
-	transition: 0.4s border;
-	font-size: 1em;
-	color: #fff;
-}	
-#formContact .nombre::placeholder { padding-left: 10px;
-	color: #fff;
-}
-#formContact .apellido{ grid-area:apellido ;
-	height: 30px;
-	background-color: transparent ;
-	border-bottom: 1px solid #fff;
-	border-top: 1px solid transparent;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	outline: none;
-	transition: 0.4s border;
-	font-size: 1.1em;
-	color: #fff;
-}
-#formContact .apellido::placeholder { padding-left: 10px;
-	color: #fff;
-}
-#formContact .email{ grid-area:email ;
-	height: 30px;
-	background-color: transparent ;
-	border-bottom: 1px solid #fff;
-	border-top: 1px solid transparent;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	outline: none;
-	transition: 0.4s border;
-	font-size: 1.1em;
-	color: #fff;
-}
-#formContact .email::placeholder { padding-left: 10px;
-	color: #fff;
-}
-#formContact .telefono{ grid-area:telefono ;
-	height: 30px;
-	background-color: transparent ;
-	border-bottom: 1px solid #fff;
-	border-top: 1px solid transparent;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	outline: none;
-	transition: 0.4s border;
-	font-size: 1.1em;
-	color: #fff;
-}
-#formContact .telefono::placeholder { padding-left: 10px; 
-	color: #fff;
-}
-#formContact .localidad{ grid-area:localidad ;
-	height: 30px;
-	background-color: transparent ;
-	border-bottom: 1px solid #fff;
-	border-top: 1px solid transparent;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	outline: none;
-	transition: 0.4s border;
-	font-size: 1.1em;
-	color: #fff;
-}
-#formContact .localidad::placeholder { padding-left: 10px;
-	color: #fff;
-}
-#formContact #btn-sub{ grid-area: btn-submit;
-	height: 30px;
-	border:none;
-	border-radius: 3px;
-	color: #fff;
-	font-size: 1.1em;
-	background-color: #c83349;
-}
-#formContact .btn-clean{ grid-area:clean ; 
-	height: 30px;
-	border: none;
-	border-radius: 3px;
-	color: #fff;
-	font-size: 1.1em;
-	background-color: #c83349;
-}
-#formContact input {background-color: #e06377
-}
-
-.valoracion__tarjeta { transition: width 3s; 
-}
-
-.valoracion__tarjeta:hover { transform: translateY(-20px) ;
 }
 

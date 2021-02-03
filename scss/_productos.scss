@@ -2,26 +2,25 @@
     display: flex;
     flex-wrap: wrap;
 }
-.main { margin-top: 100px;
+.main { margin-top: 80px;
 	display: flex;
 	flex-wrap: wrap;
     justify-content: space-around;
     max-width: 70%;
 }
-
 .main div {padding: 0px;
 	text-align: center;	
 }
 .main div div { margin-top: -30px;
 	font-size: 3em;
-	font-family: 'Caveat', cursive;
+	font-family: 'Annie Use Your Telescope', cursive;
 }
 .aside { 
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     padding:auto;
-    margin-top: 100px;
+    padding-top: 100px;
     margin: 30px;
     h4 { color: black;
         width: 200px;
@@ -41,14 +40,14 @@
 	transition-duration: 1s;
 	border-radius: 160px;
 }
-.asideList {font-family: 'Caveat', cursive;
+.asideList {font-family: 'Annie Use Your Telescope', cursive;
     font-size: 0.7em;  
 }
-.aside h4 {font-family: 'Caveat', cursive;
+.aside h4 {font-family: 'Annie Use Your Telescope', cursive;
     margin-top: 30px;
     font-size: 3em;
 }
 .asideList li {
-    font-family: 'Caveat', cursive;
+    font-family: 'Annie Use Your Telescope', cursive;
     font-size: 0.8em;
 }

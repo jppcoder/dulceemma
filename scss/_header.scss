@@ -1,9 +1,26 @@
-header { 
+* {font-family: 'Bebas Neue', cursive;
+font-size: 14px;
+}
+
+header { position: fixed;
 	width: 100%; 
-	background-color: #e06377;
 	display:flex;
 	z-index: 500;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: 50px;
+	padding-right: 40px;
+	background-color:  rgb(224,99,119);
+	max-height: 65px;
+	
 }
+
+.logoprincipal { padding: 10px;
+	width: 110px;
+	height:110px;
+	justify-content: flex-end;
+}
+
 #btn-menu {
 	display: none;
 }
@@ -12,14 +29,11 @@ header label {
 	width: 40px;
 	height: 40px;
 	padding: 10px;
-	border-right: 1px solid #fff;
+	border-right: 1px solid rgb(240, 154, 154);
 }	
 header label:hover {
 	cursor: pointer;
 	background-color: rgb(224,99,119);
-}
-.emma { color: #fff; 
-	font-size: 2em;
 }
 
 header label img {
@@ -30,17 +44,11 @@ header label img {
 .menu ul {
 	margin:0;
 	list-style: none;
-	padding: 0px;
+	padding-left: 40px;
 	display: flex;
 }
-.menu li { 
-	border-right: 1px solid #fff;
-}
-header div  { font-family: 'Caveat', cursive;
-	align-self: center;
-	font-size: 30px;
-	padding-left: 25%;
-}
+
+
 .menu li:hover {
 	background-color: rgba(0,0,0,0.3);
 }
@@ -50,7 +58,18 @@ header div  { font-family: 'Caveat', cursive;
 .menu li a { 
 	display: block;
 	padding: 10px 20px;
-	color: #fff;
+	color:rgb(255, 255, 255);
 	text-decoration: none;
 	text-align: center;	
+	font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 25px;
+}
+.containerMov__text-parrafo { font-size: 1.5em;
+	color:rgb(80, 78, 78);
+	text-shadow: 1px 1px rgb(231, 226, 226);
+	padding: 20px;
+	position: relative;
+	padding: 40px;
+	font-family: 'Annie Use Your Telescope', cursive;
+	
 }

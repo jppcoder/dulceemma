@@ -1,0 +1,122 @@
+* {font-family: 'Annie Use Your Telescope', cursive;
+	font-size: 14px;
+	}
+/********* formulario de contacto ***************/
+.mainContact { 
+	margin-top: 100px;
+	margin-right: 40px;
+	margin-left: 40px; 
+	margin-bottom: 100px;
+}
+.field_contacto {border:none;
+	text-align: center;
+}
+#formContact { display: grid;
+	grid-template-areas: "nombre nombre apellido apellido"
+	"email email telefono telefono"
+	"localidad localidad btn-submit clean";
+	grid-template-rows: 50px 40px 40px;
+	grid-template-columns: auto;
+	justify-items:stretch;
+	grid-column-gap: 20px;
+	grid-row-gap: 40px;
+	padding: 30px;
+	border:none;
+	align-items: center;
+	background-color: #e06377;
+	border-radius: 10px;
+	box-shadow: 0px 9px 21px 6px rgba(0,0,0,0.5);
+}
+#formContact .nombre{ grid-area:nombre ;
+	height: 30px;
+	background-color: transparent ;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	outline: none;
+	transition: 0.4s border;
+	font-size:  1.8em;
+	color: #fff;
+}	
+#formContact .nombre::placeholder { padding-left: 10px;
+	color: #fff;
+}
+#formContact .apellido{ grid-area:apellido ;
+	height: 30px;
+	background-color: transparent ;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	outline: none;
+	transition: 0.4s border;
+	font-size: 1.8em;
+	color: #fff;
+}
+#formContact .apellido::placeholder { padding-left: 10px;
+	color: #fff;
+}
+#formContact .email{ grid-area:email ;
+	height: 30px;
+	background-color: transparent ;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	outline: none;
+	transition: 0.4s border;
+	font-size:  1.8em;
+	color: #fff;
+}
+#formContact .email::placeholder { padding-left: 10px;
+	color: #fff;
+}
+#formContact .telefono{ grid-area:telefono ;
+	height: 30px;
+	background-color: transparent ;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	outline: none;
+	transition: 0.4s border;
+	font-size:  1.8em;
+	color: #fff;
+}
+#formContact .telefono::placeholder { padding-left: 10px; 
+	color: #fff;
+}
+#formContact .localidad{ grid-area:localidad ;
+	height: 30px;
+	background-color: transparent ;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	outline: none;
+	transition: 0.4s border;
+	font-size: 1.8em;
+	color: #fff;
+}
+#formContact .localidad::placeholder { padding-left: 10px;
+	color: #fff;
+}
+#formContact #btn-sub{ grid-area: btn-submit;
+	height: 30px;
+	border:none;
+	border-radius: 3px;
+	color: #fff;
+	font-size:  1.6em;
+	background-color: #c83349;
+}
+#formContact .btn-clean{ grid-area:clean ; 
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 1.6em;
+	background-color: #c83349;
+}
+#formContact input {background-color: #e06377
+}
