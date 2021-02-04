@@ -1,11 +1,25 @@
-@media (max-width: 768px) {
+@media (min-width:100px) and (max-width: 768px) {
+	.snip0015 {
+		
+		margin: 0px;
+		width: 600px;
+		min-width: 220px;
+   		max-width: 380px;
+    	max-height: 260px;
+		
+	}
+	
+	.mainContent { display: flex;
+	justify-content: center;
+	}
+
 	.logoprincipal {z-index: 1000;}
 	
 	.containerMov { max-height: 350px;}
 
 	.containerMov__text-parrafo { 
 		font-size: 1.5em;
-		padding: 5px;
+		padding: 20px;
 	}
 	#dulce {
 		display: flex;
@@ -56,9 +70,10 @@
 		margin: 0px;
 		margin-top: 50px;
 	} 
-	.main { margin-top: 100px;
+	.main { margin-top: 0px;
 		display: flex;
-		justify-content: center;
+		min-width:100%;
+		
 	}
 	.img1 img, .img2 img, .img3 img, .img4 img {height: 300px;
 		width: 300px;
@@ -79,7 +94,10 @@
 	}
 	.aside { 
 		padding-top: 50px;
-		padding: 20px;		  			
+		padding: 0px;		
+		margin: 20px;
+		width: 100%; 
+		h4 { width: 100%;}			
 	}
 	.aside p {font-size: 1em;
 		padding-top:50px;
@@ -105,13 +123,13 @@
 		font-size: 0.8em;
 	}
 	.mainContact { 
-		margin-right: 5px;
-		margin-left: 5px; 
+		margin-right: 20px;
+		margin-left: 20px; 
 	}
 	.footerP p { display:inline-block;
 		color: black;
-		padding-right: 5px;
-		padding-left: 5px; 
+		padding-right: 20px;
+		padding-left: 20px; 
 		font-size: 1,1em;
 	}
 	@keyframes redes { 
@@ -122,18 +140,18 @@
 		to {transform: scale(1);}
 	}       
 }
-@media (max-width: 1065px) {
-	.main { margin-top: 100px;
-		max-width: 100%;
+@media (min-width:626px) and (max-width: 1065px) {
+	.main { margin-top: 30px;
+		min-width:100%;
 	}
 	.aside { 
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
 		margin-top: 100px;
-		margin: 30px;
+		margin: 40px;
 		justify-content: space-between;
-		h4 { color: black;
+		h4 {
 			font-size:1.9em;
 			ul { list-style: square;
 				li {font-size: 1.3em;}
