@@ -1,4 +1,4 @@
-$rosita : rgba(224,99,119,0.5);
+$rosita : rgb(224,99,119);
 %shop { height:300px;}
 @mixin tamaño($width, $height) {
     height: $height;
