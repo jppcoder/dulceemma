@@ -36,7 +36,7 @@
 .item-slide img {max-width: 100%}
 .slide{
 	display: flex;
-	transform: translate3d(0, 0, 0, 0);
+	transform: translate3d();
 	transition: all 600ms;
 	animation-name: autoplay;
 	animation-duration: 6.5s;

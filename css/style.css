@@ -165,9 +165,6 @@ header label img {
   padding: 40px;
   font-family: 'Annie Use Your Telescope', cursive; }
 
-.dropwown-text {
-  font-size: 1.4em; }
-
 .body {
   display: flex;
   justify-content: center;
@@ -203,7 +200,7 @@ header label img {
 
 .slide {
   display: flex;
-  transform: translate3d(0, 0, 0, 0);
+  transform: translate3d();
   transition: all 600ms;
   animation-name: autoplay;
   animation-duration: 6.5s;
@@ -652,22 +649,6 @@ span {
   text-align: center;
   color: #fff;
   height: 90px; }
-
-.footerP img {
-  animation-name: redes;
-  transition: all 600ms;
-  animation-duration: 6.5s;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite; }
-
-@keyframes redes {
-  from {
-    transform: scale(1); }
-  50% {
-    transform: scale(1.4); }
-  to {
-    transform: scale(1); } }
 
 #jpp0 {
   animation-name: jpp;
