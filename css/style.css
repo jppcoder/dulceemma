@@ -170,6 +170,9 @@ header label img {
   justify-content: center;
   flex-flow: column; }
 
+.containerMov_titulo {
+  padding-left: 40px; }
+
 /********* menu slider ***************/
 @keyframes autoplay {
   25% {
@@ -376,6 +379,9 @@ figure.imgcont:hover figcaption::before {
   display: flex;
   flex-wrap: wrap; }
 
+.tituloProducto {
+  text-align: center; }
+
 .main {
   margin-top: 20px;
   display: flex;
@@ -428,9 +434,12 @@ figure.imgcont:hover figcaption::before {
   font-family: 'Annie Use Your Telescope', cursive;
   font-size: 14px; }
 
+.tituloContacto {
+  text-align: center; }
+
 /********* formulario de contacto ***************/
 .mainContact {
-  margin-top: 100px;
+  margin-top: 60px;
   margin-right: 40px;
   margin-left: 40px;
   margin-bottom: 100px; }
@@ -559,6 +568,9 @@ figure.imgcont:hover figcaption::before {
 
 #formContact input {
   background-color: #e06377; }
+
+.tituloCompras {
+  text-align: center; }
 
 /********* tarjetas de valoracion ***************/
 .valoracion {
@@ -694,6 +706,8 @@ span {
   .mainContent {
     display: flex;
     justify-content: center; }
+  .containerMov_titulo {
+    padding-left: 20px; }
   .logoprincipal {
     z-index: 1000; }
   .containerMov {
