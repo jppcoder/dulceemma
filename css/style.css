@@ -94,81 +94,14 @@ a {
     transform: scale(2);
     margin: 50px; } }
 
-.shop1, .shop2, .shop3, .shop4, .shop5 {
+.shop1 {
   height: 300px; }
 
-header {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  z-index: 500;
-  justify-content: space-between;
-  position: relative;
-  margin-bottom: 50px;
-  padding-right: 40px;
-  background-color: #e06377;
-  max-height: 65px; }
-
-.logoprincipal {
-  padding: 10px;
-  width: 110px;
-  height: 110px;
-  justify-content: flex-end; }
-
-#btn-menu {
-  display: none; }
-
-header label {
-  display: none;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  border-right: 1px solid #f09a9a; }
-
-header label:hover {
-  cursor: pointer;
-  background-color: #e06377; }
-
-header label img {
-  height: 30px;
-  width: 25px;
-  padding-left: 2px; }
-
-.menu ul {
-  margin: 0;
-  list-style: none;
-  padding-left: 40px;
-  display: flex; }
-
-.menu li:hover {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.aside p {
-  font-weight: 10px;
-  font-size: 15px; }
-
-.menu li a {
-  display: block;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  font-family: 'Annie Use Your Telescope', cursive;
-  font-size: 25px; }
-
-.containerMov__text-parrafo {
-  font-size: 1.5em;
-  color: #504e4e;
-  text-shadow: 1px 1px #e7e2e2;
-  padding: 20px;
-  position: relative;
-  padding: 40px;
-  font-family: 'Annie Use Your Telescope', cursive; }
-
-.body {
+body {
   display: flex;
   justify-content: center;
-  flex-flow: column; }
+  flex-flow: column;
+  transition: .3s ease all; }
 
 .containerMov_titulo {
   padding-left: 40px; }
@@ -285,6 +218,123 @@ input[id="4"]:checked ~ .slide {
 
 input[id="4"]:checked ~ .pagination .pagination-item[for="4"] {
   background: #fff; }
+
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  z-index: 500;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 50px;
+  padding-right: 40px;
+  background-color: #e06377;
+  max-height: 65px; }
+
+.switch {
+  background: #100F10;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  margin-top: 16px;
+  height: 30px; }
+
+.switchContent {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
+  padding: 0px; }
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #F1F1F1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2); }
+
+.switch.active {
+  background: orange;
+  color: #000; }
+
+.switch.active::after {
+  right: 0;
+  left: unset; }
+
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff; }
+
+.logoprincipal {
+  padding: 10px;
+  width: 110px;
+  height: 110px;
+  justify-content: flex-end; }
+
+#btn-menu {
+  display: none; }
+
+header label {
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-right: 1px solid #f09a9a; }
+
+header label:hover {
+  cursor: pointer;
+  background-color: #e06377; }
+
+header label img {
+  height: 30px;
+  width: 25px;
+  padding-left: 2px; }
+
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 40px;
+  display: flex; }
+
+.menu li:hover {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.aside p {
+  font-weight: 10px;
+  font-size: 15px; }
+
+.menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-size: 25px; }
+
+.containerMov__text-parrafo {
+  font-size: 1.5em;
+  color: #504e4e;
+  text-shadow: 1px 1px #e7e2e2;
+  padding: 20px;
+  position: relative;
+  padding: 40px;
+  font-family: 'Annie Use Your Telescope', cursive; }
 
 figure.imgcont {
   font-family: 'Raleway', Arial, sans-serif;
@@ -616,22 +666,6 @@ figure.imgcont:hover figcaption::before {
 .shop1 {
   background-color: #e06377; }
 
-.shop2 {
-  background-color: #e06377; }
-
-.shop3 {
-  background-color: #e06377; }
-
-.shop4 {
-  background-color: #e06377; }
-
-.shop5 {
-  background-color: #e06377; }
-
-.shop6 {
-  background-color: #e06377;
-  height: 300px; }
-
 span {
   color: white; }
 
@@ -739,6 +773,8 @@ span {
     height: 50px; }
   header label {
     display: inline-flex; }
+  .switch {
+    margin-top: 10px; }
   .menu {
     position: absolute;
     background: #e06377;
@@ -818,7 +854,17 @@ span {
     50% {
       transform: scale(1.2); }
     to {
-      transform: scale(1); } } }
+      transform: scale(1); } }
+  body.dark {
+    background-color: #100F10; }
+    body.dark .menu {
+      background-color: #242424; }
+    body.dark header label {
+      width: 50px;
+      height: auto; }
+    body.dark header label:hover {
+      background-color: #1B1B1B;
+      width: 50px; } }
 
 @media (min-width: 626px) and (max-width: 1065px) {
   .main {
@@ -837,3 +883,25 @@ span {
         list-style: square; }
         .aside h4 ul li {
           font-size: 1.3em; } }
+
+body.dark {
+  background-color: #100F10; }
+  body.dark header {
+    background-color: #242424;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.45); }
+  body.dark .containerMov_titulo {
+    color: rgba(255, 255, 255, 0.67); }
+  body.dark .footerP P {
+    color: rgba(255, 255, 255, 0.96); }
+  body.dark .footerP h4 {
+    background-color: #242424; }
+  body.dark .shop1 {
+    background-color: #242424; }
+  body.dark .tituloCompras {
+    color: rgba(255, 255, 255, 0.67); }
+  body.dark .valoracion__tarjeta-texto {
+    color: rgba(255, 255, 255, 0.96); }
+  body.dark .menu li:hover {
+    background-color: #242424; }
+  body.dark figure.imgcont {
+    background-color: #1B1B1B; }

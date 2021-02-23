@@ -18,8 +18,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-	<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>	
 </head>
 <body>
 	<header>
@@ -33,8 +34,14 @@
 				<li><a href="#foot">Redes</a></li>
 				<li><a href="contacto.html">Contacto</a></li>
 			</ul>
-		</nav>
-		<a href="inicio.html"><img class="logoprincipal" src="ico/logo.png" alt="logo de la pagina"></a>
+		</nav> 
+		<div class="switchContent">
+			<button class="switch" id="switch">
+				<span><i class="fas fa-sun"></i></span>
+				<span><i class="fas fa-moon"></i></span>
+			</button>
+			<a href="inicio.html"><img class="logoprincipal" src="ico/logo.png" alt="logo de la pagina"></a>
+		</div>	
 	</header>
 	<h1 class="tituloContacto"> Dejanos tu consulta </h1>
 	<div class="mainContact"> <a name="cont"></a>
@@ -62,6 +69,7 @@
 		<h4> Realizada por: <span id="jpp0">Juan</span> <span id="jpp1">Pablo </span><span id="jpp2">Pagotto </span><br> Buenos Aires, Argentina - Año 2020 <br> Todos los derechos reservados</h4>
 	</div>	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
 

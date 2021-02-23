@@ -19,7 +19,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>	
 </head>
 <body>
 	<header>
@@ -34,13 +35,20 @@
 				<li><a href="contacto.html">Contacto</a></li>
 			</ul>
 		</nav> 
-		<a href="inicio.html"><img class="logoprincipal" src="ico/logo.png" alt="logo de la pagina"></a>
+		<div class="switchContent">
+			<button class="switch" id="switch">
+				<span><i class="fas fa-sun"></i></span>
+				<span><i class="fas fa-moon"></i></span>
+			</button>
+			<a href="inicio.html"><img class="logoprincipal" src="ico/logo.png" alt="logo de la pagina"></a>
+		</div>	
 	</header>
 	<div class="containerMov__text">
 		<h1 class="containerMov_titulo">Dulce Emma Deco-Tejido</h1>
 		<p class="containerMov__text-parrafo"> Somos una MiniPyme dedicada al diseño y desarrollo de artesania en tejidos,  nacio como un hobby hace mas de 10 años y luego de mucha dedicacion, esfuerzo y amor se convirtio en este hermoso proyecto <br> <br>
 				La calidad de nuestros productos es excelente, provoca una sensacion agradable al tacto, una calidez increible a la vista, volviendo cualquier ambiente calido
 	</div>
+	
 	<div class="slidebox">
 		<div class="container-all">
 			<input type="radio" id="1" name="image-slide" hidden/>
@@ -92,6 +100,7 @@
 		<h4> Realizada por: <span id="jpp0">Juan</span> <span id="jpp1">Pablo </span><span id="jpp2">Pagotto </span><br> Buenos Aires, Argentina - Año 2020 <br> Todos los derechos reservados</h4>
 	</div>	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
 

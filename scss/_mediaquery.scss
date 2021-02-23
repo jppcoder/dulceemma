@@ -1,12 +1,10 @@
 @media (min-width:100px) and (max-width: 768px) {
 	.imgcont {
-		
-		margin: 0px;
-		width: 600px;
-		min-width: 220px;
-   		max-width: 380px;
-    	max-height: 260px;
-		
+	margin: 0px;
+	width: 600px;
+	min-width: 220px;
+   	max-width: 380px;
+    max-height: 260px;
 	}
 	
 	.mainContent { display: flex;
@@ -14,9 +12,7 @@
 	}
 	.containerMov_titulo{padding-left: 20px;}
 	.logoprincipal {z-index: 1000;}
-	
 	.containerMov { max-height: 350px;}
-
 	.containerMov__text-parrafo { 
 		font-size: 1.5em;
 		padding: 20px;
@@ -48,6 +44,7 @@
 	header label {
 		display: inline-flex;
 	}
+	.switch {margin-top: 10px;}
 	.menu { 
 		position: absolute;
 		background: rgb(224,99,119);
@@ -73,7 +70,6 @@
 	.main { margin-top: 0px;
 		display: flex;
 		min-width:100%;
-		
 	}
 	.img1 img, .img2 img, .img3 img, .img4 img {height: 300px;
 		width: 300px;
@@ -139,6 +135,15 @@
 	
 		to {transform: scale(1);}
 	}       
+	//----------------------dark mode -----------------------//
+	body.dark {background-color: $darkoscuro;
+		.menu {background-color: $darkclaro	;}
+		header label {width: 50px;
+			height: auto;}
+		header label:hover {background-color: $darkmedio;
+			width: 50px;}
+		}
+		
 }
 @media (min-width:626px) and (max-width: 1065px) {
 	.main { margin-top: 30px;
@@ -156,7 +161,6 @@
 			ul { list-style: square;
 				li {font-size: 1.3em;}
 			}
-			
 		}						 
 	}
 }

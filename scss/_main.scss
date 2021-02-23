@@ -1,6 +1,7 @@
-.body {display: flex;
+body {display: flex;
 	justify-content: center;
 	flex-flow: column;
+	transition: .3s ease all;
 }
 
 .containerMov_titulo {padding-left: 40px;}
