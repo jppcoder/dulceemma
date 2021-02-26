@@ -1,4 +1,5 @@
-header { position: fixed;
+header { 
+	position: fixed;
 	width: 100%; 
 	display:flex;
 	z-index: 500;
@@ -7,8 +8,7 @@ header { position: fixed;
 	margin-bottom: 50px;
 	padding-right: 40px;
 	background-color: $rosita;
-	max-height: 65px;
-	
+	max-height: 65px;	
 }
 
 //----------------------boton swtich darkmode --------------------//
@@ -23,6 +23,7 @@ header { position: fixed;
 	margin-top: 16px;
 	height: 30px;
 }
+
 .switchContent {
 	width: 250px;
 	display: flex;
@@ -45,7 +46,6 @@ header { position: fixed;
 	transition: .3s ease all;
 	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
-
 .switch.active {
 	background: orange;
 	color: #000;
@@ -54,7 +54,6 @@ header { position: fixed;
 	right: 0;
 	left: unset;
 }
-
 .switch span {
 	width: 30px;
 	height: 30px;
@@ -64,15 +63,28 @@ header { position: fixed;
 	color: #fff;
 }
 //----------------------barra nav --------------------//
-.logoprincipal { padding: 10px;
+.logo {z-index: 1500;}
+
+.logoprincipal { 
+	padding: 10px;
 	width: 110px;
-	height:110px;
-	justify-content: flex-end;
+	height: 120px;
+	margin-left: 53px;
+
+
+}
+.logodark { 
+	display: none;
+	padding: 10px;
+	width: 110px;
+	height: 120px;
+	
+	
+	
 }
 #btn-menu {
 	display: none;
 }
-
 header label {
 	display: none;
 	width: 40px;
@@ -92,29 +104,22 @@ header label img {
 .menu ul {
 	margin:0;
 	list-style: none;
-	padding-left: 40px;
+	padding-left: 20px;
 	display: flex;
 }
 .menu li:hover {
 	background-color: rgba(0,0,0,0.3);
 }
-.aside p {font-weight:10px;
+.aside p {
+	font-weight:10px;
 	font-size:15px;
 }
 .menu li a { 
 	display: block;
-	padding: 10px 20px;
+	padding: 10px 25px;
 	color:rgb(255, 255, 255);
 	text-decoration: none;
 	text-align: center;	
-	font-family: 'Annie Use Your Telescope', cursive;
-	font-size: 25px;
-}
-.containerMov__text-parrafo { font-size: 1.5em;
-	color:rgb(80, 78, 78);
-	text-shadow: 1px 1px rgb(231, 226, 226);
-	padding: 20px;
-	position: relative;
-	padding: 40px;
-	font-family: 'Annie Use Your Telescope', cursive;
+	font-family: $fontannie;
+	font-size: 2em;
 }

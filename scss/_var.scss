@@ -5,7 +5,8 @@ $darkclaro: #242424;
 $letblanca:rgba(#fff, 0.96);
 $letclara:rgba(#fff, 0.67);
 $letoscura: rgba(#fff, 0.45);
-
+$fontannie: 'Sacramento', cursive;
+$fontraleway:'Montserrat', sans-serif;
 %shop { height:300px;}
 @mixin tamaño($width, $height) {
     height: $height;

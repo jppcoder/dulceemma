@@ -1,10 +1,26 @@
-body {display: flex;
+body {
+	display: flex;
 	justify-content: center;
 	flex-flow: column;
 	transition: .3s ease all;
+	font-family:$fontraleway;
 }
 
-.containerMov_titulo {padding-left: 40px;}
+.containerMov_titulo {
+	padding-left: 40px;
+	font-family: $fontannie;
+}
+
+.containerMov__text-parrafo { 
+	font-size: 1.4em;
+	color:rgb(80, 78, 78);
+	padding: 20px;
+	position: relative;
+	padding: 40px;
+	font-family:$fontraleway;
+}
+
+
 /********* menu slider ***************/
 @keyframes autoplay{
 	25%{
@@ -22,7 +38,8 @@ body {display: flex;
 		transform: translate3d(calc(-100% * 3), 0, 0);
 	}
 }
-.slidebox { display: flex;
+.slidebox { 
+	display: flex;
 	justify-content: center;
 }
 .container-all {
@@ -36,7 +53,8 @@ body {display: flex;
 	align-content: center;
 	
 }
-.item-slide img {max-width: 100%}
+.item-slide img {
+	max-width: 100%}
 .slide{
 	display: flex;
 	transform: translate3d();

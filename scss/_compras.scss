@@ -1,7 +1,10 @@
-.tituloCompras {text-align: center;}
-
+.tituloCompras {
+	text-align: center;
+	font-family: $fontannie;
+}
 /********* tarjetas de valoracion ***************/
-.valoracion { display: flex;
+.valoracion {
+	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -31,12 +34,18 @@ box-shadow: 4px 4px 10px $rosita
 }
 .valoracion__tarjeta-texto { margin-top: 10px;
 }
-.dropwown-text {font-size: 1.4em;
-}
+
 .valoracion__tarjeta:hover { transform: translateY(-20px) ;
 }
 /********* seccion compra ***************/
-.shop1 {background-color:rgb(224,99,119);
+.shop1 {background-color:$rosita;
 	@extend %shop;
 }
-span {color: white;}
+span {color: white;
+}
+.dropwown-text {font-size: 1.2em;
+	font-family:$fontraleway;
+}
+.dropwown-menu li a{ 
+	font-family:$fontraleway;
+}

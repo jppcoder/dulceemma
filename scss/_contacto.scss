@@ -1,8 +1,10 @@
-* {font-family: 'Annie Use Your Telescope', cursive;
-	font-size: 14px;
+* {font-size: 14px;
 }
-.tituloContacto {text-align: center;}
-/********* formulario de contacto ***************/
+.tituloContacto {
+	text-align: center;
+	font-family: $fontannie;
+}
+//---------------formulario de contacto -----------------//
 .mainContact { 
 	margin-top: 60px;
 	margin-right: 40px;
@@ -12,7 +14,9 @@
 .field_contacto {border:none;
 	text-align: center;
 }
-#formContact { display: grid;
+//------------formulario realizado con grid---------------//
+#formContact { 
+	display: grid;
 	grid-template-areas: "nombre nombre apellido apellido"
 	"email email telefono telefono"
 	"localidad localidad btn-submit clean";
@@ -28,7 +32,8 @@
 	border-radius: 10px;
 	box-shadow: 0px 9px 21px 6px rgba(0,0,0,0.5);
 }
-#formContact .nombre{ grid-area:nombre ;
+#formContact .nombre{ 
+	grid-area:nombre ;
 	height: 30px;
 	background-color: transparent ;
 	border-bottom: 1px solid #fff;
@@ -37,13 +42,15 @@
 	border-right: 1px solid transparent;
 	outline: none;
 	transition: 0.4s border;
-	font-size:  1.8em;
+	font-size:  1.4em;
 	color: #fff;
 }	
-#formContact .nombre::placeholder { padding-left: 10px;
+#formContact .nombre::placeholder { 
+	padding-left: 10px;
 	color: #fff;
 }
-#formContact .apellido{ grid-area:apellido ;
+#formContact .apellido{ 
+	grid-area:apellido ;
 	height: 30px;
 	background-color: transparent ;
 	border-bottom: 1px solid #fff;
@@ -52,13 +59,15 @@
 	border-right: 1px solid transparent;
 	outline: none;
 	transition: 0.4s border;
-	font-size: 1.8em;
+	font-size: 1.4em;
 	color: #fff;
 }
-#formContact .apellido::placeholder { padding-left: 10px;
+#formContact .apellido::placeholder { 
+	padding-left: 10px;
 	color: #fff;
 }
-#formContact .email{ grid-area:email ;
+#formContact .email{ 
+	grid-area:email ;
 	height: 30px;
 	background-color: transparent ;
 	border-bottom: 1px solid #fff;
@@ -67,13 +76,15 @@
 	border-right: 1px solid transparent;
 	outline: none;
 	transition: 0.4s border;
-	font-size:  1.8em;
+	font-size:  1.4em;
 	color: #fff;
 }
-#formContact .email::placeholder { padding-left: 10px;
+#formContact .email::placeholder { 
+	padding-left: 10px;
 	color: #fff;
 }
-#formContact .telefono{ grid-area:telefono ;
+#formContact .telefono{ 
+	grid-area:telefono ;
 	height: 30px;
 	background-color: transparent ;
 	border-bottom: 1px solid #fff;
@@ -82,13 +93,15 @@
 	border-right: 1px solid transparent;
 	outline: none;
 	transition: 0.4s border;
-	font-size:  1.8em;
+	font-size:  1.4em;
 	color: #fff;
 }
-#formContact .telefono::placeholder { padding-left: 10px; 
+#formContact .telefono::placeholder { 
+	padding-left: 10px; 
 	color: #fff;
 }
-#formContact .localidad{ grid-area:localidad ;
+#formContact .localidad{
+	grid-area:localidad ;
 	height: 30px;
 	background-color: transparent ;
 	border-bottom: 1px solid #fff;
@@ -97,27 +110,32 @@
 	border-right: 1px solid transparent;
 	outline: none;
 	transition: 0.4s border;
-	font-size: 1.8em;
+	font-size: 1.4em;
 	color: #fff;
 }
-#formContact .localidad::placeholder { padding-left: 10px;
+#formContact .localidad::placeholder { 
+	padding-left: 10px;
 	color: #fff;
 }
-#formContact #btn-sub{ grid-area: btn-submit;
+//------------botones del formulario---------------//
+#formContact #btn-sub{ 
+	grid-area: btn-submit;
 	height: 30px;
 	border:none;
 	border-radius: 3px;
 	color: #fff;
-	font-size:  1.6em;
+	font-size:  1.4em;
 	background-color: #c83349;
 }
-#formContact .btn-clean{ grid-area:clean ; 
+#formContact .btn-clean{ 
+	grid-area:clean ; 
 	height: 30px;
 	border: none;
 	border-radius: 3px;
 	color: #fff;
-	font-size: 1.6em;
+	font-size: 1.4em;
 	background-color: #c83349;
 }
-#formContact input {background-color: #e06377
+#formContact input {
+	background-color: #e06377
 }

@@ -10,11 +10,23 @@
 	.mainContent { display: flex;
 	justify-content: center;
 	}
-	.containerMov_titulo{padding-left: 20px;}
-	.logoprincipal {z-index: 1000;}
-	.containerMov { max-height: 350px;}
+	.containerMov_titulo{
+		padding-left: 20px;
+	}
+	.tituloProducto .tituloContacto .containerMov_titulo {
+		font-size: 2rem;
+	}
+	.logoprincipal .logodark {
+		height: 110px;
+		width: 100px;
+	}
+	.switchContent{
+		margin-right: -50px;}
+	.containerMov {
+		max-height: 350px;
+	}
 	.containerMov__text-parrafo { 
-		font-size: 1.5em;
+		font-size: 1.2em;
 		padding: 20px;
 	}
 	#dulce {
@@ -30,7 +42,7 @@
 	#espera {font-size: 30px;
 		text-align: center;
 	}
-	.emma { font-family: 'Caveat', cursive;
+	.emma { font-family:$fontraleway;
 		font-size: 2em;
 		color: #fff;
 		padding-left: 25%;
@@ -44,7 +56,9 @@
 	header label {
 		display: inline-flex;
 	}
-	.switch {margin-top: 10px;}
+	.switch {
+		margin-top: 10px;
+	}
 	.menu { 
 		position: absolute;
 		background: rgb(224,99,119);
@@ -58,20 +72,24 @@
 		flex-direction: column;
 		padding-left: 0px;
 	}
-	.menu li a { text-align: left;
+	.menu li a { 
+		text-align: left;
 		border-bottom: 1px solid #fff;
 	}
-	.menu li { background-color: none;
+	.menu li { 
+		background-color: none;
 	}
 	#btn-menu:checked ~ .menu { 
 		margin: 0px;
 		margin-top: 50px;
 	} 
-	.main { margin-top: 0px;
+	.main { 
+		margin-top: 0px;
 		display: flex;
 		min-width:100%;
 	}
-	.img1 img, .img2 img, .img3 img, .img4 img {height: 300px;
+	.img1 img, .img2 img, .img3 img, .img4 img {
+		height: 300px;
 		width: 300px;
 		border-radius: 150px;
 		margin: 30px;
@@ -84,7 +102,8 @@
 		transition-duration: 1s;
 		border-radius: 160px;
 	}
-	.main div div { margin-top: -30px;
+	.main div div { 
+		margin-top: -30px;
 		font-size: 2em;
 		font-family: 'Caveat', cursive;
 	}
@@ -98,7 +117,9 @@
 	.aside p {font-size: 1em;
 		padding-top:50px;
 	}
-	#formContact { display: grid;
+	//------------formulario realizado con grid---------------//
+	#formContact { 
+		display: grid;
 		grid-template-areas: "nombre nombre"
 		"apellido apellido" 
 		"email email" 
@@ -122,31 +143,46 @@
 		margin-right: 20px;
 		margin-left: 20px; 
 	}
-	.footerP p { display:inline-block;
+	.footerP{ 
+		p { 
+		display:inline-block;
 		color: black;
 		padding-right: 20px;
 		padding-left: 20px; 
-		font-size: 1,1em;
+		font-size: 1.2em;
+		}
+		h4 {font-size: 1em;
+		}
 	}
-	@keyframes redes { 
-		from { transform: scale(1);}
-			
-		50% { transform: scale(1.2);}
 	
-		to {transform: scale(1);}
+	@keyframes redes { 
+		from { transform: scale(1)
+		}
+			
+		50% { transform: scale(1.2)
+		}
+	
+		to {transform: scale(1)
+		}
 	}       
 	//----------------------dark mode -----------------------//
-	body.dark {background-color: $darkoscuro;
-		.menu {background-color: $darkclaro	;}
-		header label {width: 50px;
-			height: auto;}
-		header label:hover {background-color: $darkmedio;
+	body.dark {
+		background-color: $darkoscuro;
+		.menu {
+			background-color: $darkclaro	;}
+		header label {
+			width: 50px;
+			height: auto;
+		}
+		header label:hover {
+			background-color: $darkmedio;
 			width: 50px;}
 		}
 		
 }
 @media (min-width:626px) and (max-width: 1065px) {
-	.main { margin-top: 30px;
+	.main { 
+		margin-top: 30px;
 		min-width:100%;
 	}
 	.aside { 
@@ -158,7 +194,8 @@
 		justify-content: space-between;
 		h4 {
 			font-size:1.9em;
-			ul { list-style: square;
+			ul { 
+				list-style: square;
 				li {font-size: 1.3em;}
 			}
 		}						 

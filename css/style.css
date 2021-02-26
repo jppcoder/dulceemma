@@ -101,10 +101,20 @@ body {
   display: flex;
   justify-content: center;
   flex-flow: column;
-  transition: .3s ease all; }
+  transition: .3s ease all;
+  font-family: "Montserrat", sans-serif; }
 
 .containerMov_titulo {
-  padding-left: 40px; }
+  padding-left: 40px;
+  font-family: "Sacramento", cursive; }
+
+.containerMov__text-parrafo {
+  font-size: 1.4em;
+  color: #504e4e;
+  padding: 20px;
+  position: relative;
+  padding: 40px;
+  font-family: "Montserrat", sans-serif; }
 
 /********* menu slider ***************/
 @keyframes autoplay {
@@ -280,11 +290,20 @@ header {
   background: none;
   color: #fff; }
 
+.logo {
+  z-index: 1500; }
+
 .logoprincipal {
   padding: 10px;
   width: 110px;
-  height: 110px;
-  justify-content: flex-end; }
+  height: 120px;
+  margin-left: 53px; }
+
+.logodark {
+  display: none;
+  padding: 10px;
+  width: 110px;
+  height: 120px; }
 
 #btn-menu {
   display: none; }
@@ -308,7 +327,7 @@ header label img {
 .menu ul {
   margin: 0;
   list-style: none;
-  padding-left: 40px;
+  padding-left: 20px;
   display: flex; }
 
 .menu li:hover {
@@ -320,24 +339,65 @@ header label img {
 
 .menu li a {
   display: block;
-  padding: 10px 20px;
+  padding: 10px 25px;
   color: white;
   text-decoration: none;
   text-align: center;
-  font-family: 'Annie Use Your Telescope', cursive;
-  font-size: 25px; }
+  font-family: "Sacramento", cursive;
+  font-size: 2em; }
 
-.containerMov__text-parrafo {
-  font-size: 1.5em;
-  color: #504e4e;
-  text-shadow: 1px 1px #e7e2e2;
-  padding: 20px;
-  position: relative;
-  padding: 40px;
-  font-family: 'Annie Use Your Telescope', cursive; }
+.mainContent {
+  display: flex;
+  flex-wrap: wrap; }
+
+.tituloProducto {
+  text-align: center;
+  font-family: "Sacramento", cursive;
+  font-size: 2em; }
+
+.main {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 70%; }
+  .main .main div {
+    padding: 0px;
+    text-align: center; }
+  .main .main div div {
+    margin-top: -30px;
+    font-size: 3em;
+    font-family: "Sacramento", cursive; }
+
+.aside {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: auto;
+  padding-top: 0px;
+  margin: 0px; }
+  .aside h4 {
+    font-family: "Sacramento", cursive;
+    margin-top: 30px;
+    font-size: 2.5em;
+    color: white;
+    box-shadow: 0px 9px 21px 6px rgba(0, 0, 0, 0.5);
+    background-color: #e06377;
+    border-radius: 10px;
+    padding-left: 30px;
+    width: 250px; }
+
+.asideList {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.5em;
+  color: white;
+  padding-left: 10px; }
+  .asideList li {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em; }
 
 figure.imgcont {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -348,63 +408,46 @@ figure.imgcont {
   width: 100%;
   background: #e06377;
   text-align: center;
-  border-radius: 20px; }
-
-figure.imgcont * {
-  box-sizing: border-box; }
-
-figure.imgcont img {
-  opacity: 1;
-  width: 100%;
-  transition: opacity 0.35s; }
-
-figure.imgcont figcaption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 5em 3em;
-  width: 100%;
-  height: 100%; }
-
-figure.imgcont figcaption::before {
-  position: absolute;
-  top: 50%;
-  right: 30px;
-  bottom: 50%;
-  left: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
-  content: '';
-  opacity: 0;
-  background-color: #ffffff;
-  transition: all 0.4s;
-  transition-delay: 0.6s; }
-
-figure.imgcont h2, figure.imgcont p {
-  margin: 0 0 5px;
-  opacity: 0; }
-
-figure.imgcont h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
-  text-transform: uppercase;
-  transform: translate3d(0%, 50%, 0);
-  transition-delay: 0.3s; }
-
-figure.imgcont h2 span {
-  font-weight: 800; }
-
-figure.imgcont p {
-  font-weight: 200;
-  transition-delay: 0s; }
-
-figure.imgcont a {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  color: #ffffff; }
+  border-radius: 10px;
+  box-shadow: 0px 9px 21px 6px rgba(0, 0, 0, 0.5); }
+  figure.imgcont img {
+    opacity: 1;
+    width: 100%;
+    transition: opacity 0.35s; }
+  figure.imgcont figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5em 3em;
+    width: 100%;
+    height: 100%; }
+  figure.imgcont figcaption::before {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    bottom: 50%;
+    left: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: #ffffff;
+    transition: all 0.4s;
+    transition-delay: 0.6s; }
+  figure.imgcont h2, figure.imgcont p {
+    margin: 0 0 5px;
+    opacity: 0; }
+  figure.imgcont h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    text-transform: uppercase;
+    transform: translate3d(0%, 50%, 0);
+    transition-delay: 0.3s; }
+  figure.imgcont h2 span {
+    font-weight: 800; }
+  figure.imgcont p {
+    font-weight: 200;
+    transition-delay: 0s; }
 
 figure.imgcont:hover img {
   opacity: 0.35; }
@@ -425,69 +468,13 @@ figure.imgcont:hover figcaption::before {
   opacity: 1;
   transition-delay: 0s; }
 
-.mainContent {
-  display: flex;
-  flex-wrap: wrap; }
-
-.tituloProducto {
-  text-align: center; }
-
-.main {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  max-width: 70%; }
-
-.main div {
-  padding: 0px;
-  text-align: center; }
-
-.main div div {
-  margin-top: -30px;
-  font-size: 3em;
-  font-family: 'Annie Use Your Telescope', cursive; }
-
-.aside {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: auto;
-  padding-top: 0px;
-  margin: 0px; }
-  .aside h4 {
-    color: black;
-    width: 250px;
-    font-size: 1.7em; }
-
-.asideList {
-  font-family: 'Annie Use Your Telescope', cursive;
-  font-size: 0.7em;
-  color: white;
-  padding-left: 10px; }
-
-.aside h4 {
-  font-family: 'Annie Use Your Telescope', cursive;
-  margin-top: 30px;
-  font-size: 3em;
-  color: white;
-  box-shadow: 0px 9px 21px 6px rgba(0, 0, 0, 0.5);
-  background-color: #e06377;
-  border-radius: 20px;
-  padding-left: 30px; }
-
-.asideList li {
-  font-family: 'Annie Use Your Telescope', cursive;
-  font-size: 0.8em; }
-
 * {
-  font-family: 'Annie Use Your Telescope', cursive;
   font-size: 14px; }
 
 .tituloContacto {
-  text-align: center; }
+  text-align: center;
+  font-family: "Sacramento", cursive; }
 
-/********* formulario de contacto ***************/
 .mainContact {
   margin-top: 60px;
   margin-right: 40px;
@@ -523,7 +510,7 @@ figure.imgcont:hover figcaption::before {
   border-right: 1px solid transparent;
   outline: none;
   transition: 0.4s border;
-  font-size: 1.8em;
+  font-size: 1.4em;
   color: #fff; }
 
 #formContact .nombre::placeholder {
@@ -540,7 +527,7 @@ figure.imgcont:hover figcaption::before {
   border-right: 1px solid transparent;
   outline: none;
   transition: 0.4s border;
-  font-size: 1.8em;
+  font-size: 1.4em;
   color: #fff; }
 
 #formContact .apellido::placeholder {
@@ -557,7 +544,7 @@ figure.imgcont:hover figcaption::before {
   border-right: 1px solid transparent;
   outline: none;
   transition: 0.4s border;
-  font-size: 1.8em;
+  font-size: 1.4em;
   color: #fff; }
 
 #formContact .email::placeholder {
@@ -574,7 +561,7 @@ figure.imgcont:hover figcaption::before {
   border-right: 1px solid transparent;
   outline: none;
   transition: 0.4s border;
-  font-size: 1.8em;
+  font-size: 1.4em;
   color: #fff; }
 
 #formContact .telefono::placeholder {
@@ -591,7 +578,7 @@ figure.imgcont:hover figcaption::before {
   border-right: 1px solid transparent;
   outline: none;
   transition: 0.4s border;
-  font-size: 1.8em;
+  font-size: 1.4em;
   color: #fff; }
 
 #formContact .localidad::placeholder {
@@ -604,7 +591,7 @@ figure.imgcont:hover figcaption::before {
   border: none;
   border-radius: 3px;
   color: #fff;
-  font-size: 1.6em;
+  font-size: 1.4em;
   background-color: #c83349; }
 
 #formContact .btn-clean {
@@ -613,14 +600,15 @@ figure.imgcont:hover figcaption::before {
   border: none;
   border-radius: 3px;
   color: #fff;
-  font-size: 1.6em;
+  font-size: 1.4em;
   background-color: #c83349; }
 
 #formContact input {
   background-color: #e06377; }
 
 .tituloCompras {
-  text-align: center; }
+  text-align: center;
+  font-family: "Sacramento", cursive; }
 
 /********* tarjetas de valoracion ***************/
 .valoracion {
@@ -656,9 +644,6 @@ figure.imgcont:hover figcaption::before {
 .valoracion__tarjeta-texto {
   margin-top: 10px; }
 
-.dropwown-text {
-  font-size: 1.4em; }
-
 .valoracion__tarjeta:hover {
   transform: translateY(-20px); }
 
@@ -669,32 +654,39 @@ figure.imgcont:hover figcaption::before {
 span {
   color: white; }
 
+.dropwown-text {
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif; }
+
+.dropwown-menu li a {
+  font-family: "Montserrat", sans-serif; }
+
 .footerP {
   display: flex;
   margin-top: 40px;
   flex-wrap: wrap;
   justify-content: space-around; }
-
-.footerP P {
-  font-size: 1.5em;
-  padding: 40px;
-  font-family: 'Annie Use Your Telescope', cursive;
-  width: 100%; }
-
-.footerP img {
-  margin-top: 20px;
-  height: 40px;
-  width: 40px; }
-
-.footerP h4 {
-  background: #e06377;
-  width: 100%;
-  padding-top: 15px;
-  margin-top: 20px;
-  font-size: 1.3em;
-  text-align: center;
-  color: #fff;
-  height: 90px; }
+  .footerP P {
+    font-size: 1.4em;
+    padding: 40px;
+    font-family: "Montserrat", sans-serif;
+    width: 100%; }
+  .footerP img {
+    margin-top: 20px;
+    height: 40px;
+    width: 40px; }
+  .footerP h4 {
+    background: #e06377;
+    width: 100%;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #fff;
+    height: 90px;
+    font-family: "Montserrat", sans-serif; }
+  .footerP span {
+    font-size: 1.2em; }
 
 #jpp0 {
   animation-name: jpp;
@@ -742,12 +734,17 @@ span {
     justify-content: center; }
   .containerMov_titulo {
     padding-left: 20px; }
-  .logoprincipal {
-    z-index: 1000; }
+  .tituloProducto .tituloContacto .containerMov_titulo {
+    font-size: 2rem; }
+  .logoprincipal .logodark {
+    height: 110px;
+    width: 100px; }
+  .switchContent {
+    margin-right: -50px; }
   .containerMov {
     max-height: 350px; }
   .containerMov__text-parrafo {
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 20px; }
   #dulce {
     display: flex;
@@ -762,7 +759,7 @@ span {
     font-size: 30px;
     text-align: center; }
   .emma {
-    font-family: 'Caveat', cursive;
+    font-family: "Montserrat", sans-serif;
     font-size: 2em;
     color: #fff;
     padding-left: 25%;
@@ -847,7 +844,9 @@ span {
     color: black;
     padding-right: 20px;
     padding-left: 20px;
-    font-size: 1,1em; }
+    font-size: 1.2em; }
+  .footerP h4 {
+    font-size: 1em; }
   @keyframes redes {
     from {
       transform: scale(1); }
@@ -889,19 +888,43 @@ body.dark {
   body.dark header {
     background-color: #242424;
     border-bottom: 2px solid rgba(255, 255, 255, 0.45); }
+  body.dark .menu li:hover {
+    background-color: #242424; }
+  body.dark .logodark {
+    display: inherit; }
+  body.dark .logoprincipal {
+    display: none; }
   body.dark .containerMov_titulo {
     color: rgba(255, 255, 255, 0.67); }
+  body.dark .containerMov__text-parrafo {
+    color: rgba(255, 255, 255, 0.67); }
   body.dark .footerP P {
-    color: rgba(255, 255, 255, 0.96); }
+    color: rgba(255, 255, 255, 0.67); }
   body.dark .footerP h4 {
     background-color: #242424; }
   body.dark .shop1 {
     background-color: #242424; }
   body.dark .tituloCompras {
     color: rgba(255, 255, 255, 0.67); }
+  body.dark .dropdown-toggle {
+    color: rgba(255, 255, 255, 0.67); }
+  body.dark .btn-info {
+    background-color: #242424;
+    color: rgba(255, 255, 255, 0.67);
+    border: none; }
   body.dark .valoracion__tarjeta-texto {
     color: rgba(255, 255, 255, 0.96); }
-  body.dark .menu li:hover {
-    background-color: #242424; }
   body.dark figure.imgcont {
     background-color: #1B1B1B; }
+  body.dark .aside h4 {
+    background-color: #242424; }
+  body.dark .tituloProducto {
+    color: rgba(255, 255, 255, 0.45); }
+  body.dark figure.imgcont {
+    box-shadow: 0px 4px 10px 3px rgba(56, 56, 56, 0.5); }
+  body.dark .aside h4 {
+    box-shadow: 0px 2px 10px 2px rgba(97, 97, 97, 0.5); }
+  body.dark #formContact {
+    background-color: #1B1B1B; }
+  body.dark .tituloContacto {
+    color: rgba(255, 255, 255, 0.67); }
